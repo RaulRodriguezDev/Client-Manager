@@ -1,0 +1,40 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "Raul Rodriguez",
+      "email": "raul@correo.com",
+      "phone_number": "5539918941",
+      "company": "Solera Holdings Inc."
+    },
+    {
+      "id": 2,
+      "name": "Vania Shani",
+      "email": "vania@correo.com",
+      "phone_number": "5539721759",
+      "company": "Solera Holdings Inc."
+    },
+    {
+      "id": 3,
+      "name": "John Smith",
+      "email": "john@correo.com",
+      "phone_number": "5558423178",
+      "company": "Solera Holdings Inc."
+    },
+    {
+      "id": 4,
+      "name": "Abduz Khan",
+      "email": "abduzcan@correo.com",
+      "phone_number": "5578967723",
+      "company": "Solera Holdings Inc."
+    },
+    {
+      "name": "Pamela Vianey",
+      "company": "Solera",
+      "email": "pamela.vianey@email.com",
+      "phone_number": "5560602103",
+      "notes": "Es mi amorcito",
+      "id": 5
+    }
+  ]
+}
