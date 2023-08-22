@@ -1,3 +1,7 @@
+/**
+ * Returns all the clients in the DB
+ * @returns {Array} Clients object array
+ */
 export async function getClients(){
     const response = await fetch(import.meta.env.VITE_API_URL)
     const result = await response.json()
@@ -5,6 +9,11 @@ export async function getClients(){
     return result
 }
 
+/**
+ * Returns a client by id
+ * @param {Int32List} id 
+ * @returns {Object} Client object with the id received
+ */
 export async function getClient(id){
     const response = await fetch(`${import.meta.env.VITE_API_URL}/${id}`)
     const result = await response.json()
@@ -13,6 +22,10 @@ export async function getClient(id){
     return result
 }
 
+/**
+ * Create a new client in the DB
+ * @param {Object} data 
+ */
 export async function addClient(data) {
     try {
         const reponse = await fetch(import.meta.env.VITE_API_URL,{
@@ -30,6 +43,12 @@ export async function addClient(data) {
     }
 }
 
+/**
+ * Update a client with the id
+ * @param {Object} data 
+ * @param {Int32List} id 
+ * @returns 
+ */
 export async function updateClient(data, id) {
     
     try {
@@ -50,6 +69,10 @@ export async function updateClient(data, id) {
     return 
 }
 
+/**
+ * Delete a client from the DB
+ * @param {Int32List} id 
+ */
 export async function deleteClient(id) {
     try {
         const reponse = await fetch(`${import.meta.env.VITE_API_URL}/${id}`,{
